@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\" />
+    <None Remove="Common\Interface\" />
+    <None Remove="Command\" />
+    <None Remove="Queries\" />
+    <None Remove="Command\AuthCommand\" />
+    <None Remove="Response\" />
+    <None Remove="Command\TaskCommand\" />
+    <None Remove="Mapper\" />
+    <None Remove="Command\ProjectCommand\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="Handlers\" />
+    <None Remove="Handlers\CommandHandlers\" />
+    <None Remove="Handlers\CommandHandlers\AuthHandler\" />
+    <None Remove="Handlers\QueryHandlers\" />
+    <None Remove="Handlers\CommandHandlers\TaskHandler\" />
+    <None Remove="Handlers\CommandHandlers\ProjectHandler\" />
+    <None Remove="Handlers\QueryHandlers\TaskQueryHandler\" />
+    <None Remove="Handlers\QueryHandlers\ProjectQueryHandler\" />
+    <None Remove="Handlers\CommandHandlers\NotificationHandler\" />
+    <None Remove="Command\NotificationCommand\" />
+    <None Remove="Handlers\QueryHandlers\NotificationQueryHandler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Interface\" />
+    <Folder Include="Command\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Command\AuthCommand\" />
+    <Folder Include="Response\" />
+    <Folder Include="Response\" />
+    <Folder Include="Command\TaskCommand\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Command\ProjectCommand\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\CommandHandlers\" />
+    <Folder Include="Handlers\CommandHandlers\AuthHandler\" />
+    <Folder Include="Handlers\QueryHandlers\" />
+    <Folder Include="Handlers\CommandHandlers\TaskHandler\" />
+    <Folder Include="Handlers\CommandHandlers\ProjectHandler\" />
+    <Folder Include="Handlers\QueryHandlers\TaskQueryHandler\" />
+    <Folder Include="Handlers\QueryHandlers\ProjectQueryHandler\" />
+    <Folder Include="Handlers\CommandHandlers\NotificationHandler\" />
+    <Folder Include="Command\NotificationCommand\" />
+    <Folder Include="Handlers\QueryHandlers\NotificationQueryHandler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManager.Core\TaskManager.Core.csproj" />
+  </ItemGroup>
+</Project>
